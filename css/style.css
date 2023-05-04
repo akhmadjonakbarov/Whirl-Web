@@ -6,7 +6,12 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
@@ -178,15 +183,16 @@ ul {
 }
 
 /*brands-section*/
-.brand-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 130px 0 120px 0;
+.brand {
+    padding: 115px 0 120px;
 }
 
-.brand-text {
-    font-family: 'Inter', sans-serif;
+.brand-inner {
+    width: 100%;
+}
+
+.brand-title {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -196,69 +202,60 @@ ul {
     color: #1F1F1F;
 }
 
-.brands {
-    margin-top: 37px;
-    margin-bottom: 164px;
+.brand-images {
+    margin: 28px 0 164px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-.brands img {
-    margin-right: 60px;
-}
-
-.brands img:last-child {
-    margin: 0;
-}
-
 
 .brand-cards {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .brand-card {
-    margin-right: 33px;
-}
-
-.brand-card:last-child {
-    margin: 0;
-}
-
-.brand-card {
-    max-width: 355px;
-    width: 100%;
+    width: 355px;
     height: 250px;
-    max-height: 100%;
-    padding: 38px 36px 38px 32px;
+    padding: 37px 36px 38px 32px;
 }
 
-.brand-card h2 {
-    margin: 13px 0;
-    font-family: 'Fraunces', sans-serif;
+.brand-card:nth-child(1) {
+    background: #FAEA73;
+    border-radius: 0px;
+}
+
+.brand-card:nth-child(2) {
+    background: #CCEFF6;
+    border-radius: 0px;
+}
+
+.brand-card:nth-child(3) {
+    background: #F7CEDC;
+    border-radius: 0px;
+}
+
+.brand-card h4 {
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 31px;
     letter-spacing: 0.2px;
-
     color: #1F1F1F;
+    margin: 12px 0 13px;
 }
 
 .brand-card p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    /* or 160% */
-
     letter-spacing: 0.2px;
-
     color: #1F1F1F;
-
-}
-
-.brand-card img {
-    width: 34px;
-    height: 44px;
 }
 
 .c1 {
@@ -276,25 +273,75 @@ ul {
     border-radius: 0px;
 }
 
-/*take care of section*/
-.take-care-section-bg {
+
+
+/* relaxing-section */
+.relaxing-bg {
+    padding: 80px 0 80px;
     background: #F7F9FA;
-    border-radius: 0px;
 }
 
-.take-care-section {
-    padding: 80px 0 105px 0;
-}
-
-.take-care-text h1 {
-    font-family: 'Fraunces', sans-serif;
+.relaxing .title {
+    /* max-width: 629px; */
+    width: 100%;
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 400;
     font-size: 42px;
     line-height: 50px;
-
     letter-spacing: 0.2px;
+    color: #1F1F1F;
+    margin-bottom: 60px;
+}
 
+.relaxing-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.relaxing-accardion {
+    border-top: 1px solid #C2CDD8;
+    max-width: 450px;
+    width: 100%;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+
+
+.relaxing-accardion .ra-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ra-header span {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
     color: #1F1F1F;
 }
 
+.ra-header img {
+    margin-right: 20px;
+}
+
+.relaxing-accardion .ra-body {
+    margin: 18px 0 18px;
+}
+
+.ra-body p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #1F1F1F;
+    padding: 0 30px;
+}
